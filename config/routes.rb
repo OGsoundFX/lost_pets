@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   # get "pets/:id", to: "pets#show"
   # get "pets/new", to: "pets#new"
 
-  resources :pets, only: [:index, :show, :new, :create]
+  resources :pets
 end
