@@ -1,0 +1,10 @@
+<h1>List of pets</h1>
+<ul>
+  <% @pets.each do |pet| %>
+    <li>
+      <%= link_to pet_path(pet) do %>
+        <p><%= pet.name %> / <%= pet.species %></p>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
